@@ -1,0 +1,41 @@
+# Build output
+target/
+build/
+out/
+dist/
+
+# IDE specific
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# Dependencies
+node_modules/
+.mvn/
+.gradle/
+
+# Logs
+*.log
+logs/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Coverage reports
+coverage/
+*.lcov 
