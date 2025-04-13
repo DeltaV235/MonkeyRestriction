@@ -18,7 +18,7 @@ alwaysApply: true
 
 ## 项目结构
 - 遵循标准的 Maven 项目结构
-- 包名按照功能模块划分：`com.example.module`
+- 包名按照功能模块划分：`com.deltav.module`
 - 每个模块包含：controller, service, repository, model, config 等子包
 
 ## 代码规范
@@ -67,3 +67,8 @@ alwaysApply: true
 - 配置 CI/CD 流程
 - 日志集中管理
 - 监控告警机制
+
+## 文档
+
+- 当最终的实现和 `/doc/requirements-solution.md` 中的解决方案不一致时，更新该文档
+
