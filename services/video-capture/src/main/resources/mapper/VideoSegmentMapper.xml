@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.deltav.module.video.mapper.VideoSegmentMapper">
+    <resultMap id="BaseResultMap" type="com.deltav.module.video.entity.VideoSegment">
+        <id column="segment_id" property="segmentId"/>
+        <result column="video_id" property="videoId"/>
+        <result column="segment_path" property="segmentPath"/>
+        <result column="start_time" property="startTime"/>
+        <result column="end_time" property="endTime"/>
+        <result column="status" property="status"/>
+    </resultMap>
+
+    <select id="selectById" resultMap="BaseResultMap">
+        SELECT * FROM video_segment WHERE segment_id = #{segmentId}
+    </select>
+
+    <update id="updateStatus">
+        UPDATE video_segment SET status = #{status} WHERE segment_id = #{segmentId}
+    </update>
+</mapper> 
