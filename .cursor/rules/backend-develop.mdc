@@ -26,6 +26,7 @@ alwaysApply: true
 - 遵循阿里巴巴 Java 开发手册
 - 使用 Swagger/OpenAPI 进行 API 文档管理
 - 使用统一的异常处理机制
+- Spring bean 注入优先使用构造器注入和 Lombok 注解
 
 ## 配置管理
 - 使用 YAML 格式的配置文件
@@ -69,6 +70,5 @@ alwaysApply: true
 - 监控告警机制
 
 ## 文档
-
 - 当最终的实现和 `/doc/requirements-solution.md` 中的解决方案不一致时，更新该文档
 
